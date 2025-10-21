@@ -1,19 +1,10 @@
 <?php
-// Importando a classe Cliente
 require_once "src/Cliente.php";
 
-// Criando objetos (ou instâncias) à partir da Classe
-$clienteA = new Cliente();
-$clienteB = new Cliente();
+$clienteA = new Cliente("Mônica", 30, "monica@gmail.com");
 
-// Atribuindo valores ao objeto $clienteA
-$clienteA->nome = "Mônica";
-$clienteA->idade = 25;
-$clienteA->email = "monica@gmail.com";
 
-$clienteB->nome = "Jhon";
-$clienteB->idade = 15;
-$clienteB->email = "jhon@gmail.com";
+
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -27,35 +18,8 @@ $clienteB->email = "jhon@gmail.com";
     <hr>
     <h2>Trabalhando com classes e objetos</h2>
     
-    <h3>Acessando/lendo os dados dos objetos</h3>
-
-    <!-- Segunda versão (acesso através de um método-->
-    <?=$clienteA->mostrarDados()?>
-
-    <?=$clienteB->mostrarDados()?>
-
-
-
-
-
-
-    <hr>
-    <!-- Primeira versão (acesso direto)-->
-    <h4> Cliente A</h4>
-    <ul>
-        <li>Nome: <?= $clienteA->nome ?></li>
-        <li>Idade: <?= $clienteA->idade ?> anos </li>
-        <li>E-mail: <?= $clienteA->email ?></li>
-    </ul>
-    
-    <h4> Cliente B</h4>
-    <ul>
-        <li>Nome: <?= $clienteB->nome?></li>
-        <li>Idade: <?= $clienteB->idade?></li>
-        <li>E-mail: <?= $clienteB->email?></li>
-    </ul> 
     <hr>
     <h3>Visualizando a estrutura dos objetos</h3>
-    <pre><?=var_dump($clienteA, $clienteB)?></pre>
+
 </body>
 </html>

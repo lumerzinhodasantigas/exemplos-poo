@@ -1,16 +1,16 @@
 <?php
 class Cliente {
-    /* Atributos da classe: representam características que os objetos deverão ter */
     public string $nome;
     public int $idade;
     public string $email;
 
-    /* Método responsável por exibir dados de um objeto */
-    public function mostrarDados():void { // Usamos void para sinalizar que o método não tem return
-        echo " <div>
-                    <h4> $this->nome </h4>
-                    <p><b>E-mail de contato:</b> $this->email </p>
-                    <p><b>Idade:</b> $this->idade anos</p>
-                </div> ";
-        }
+    /* Método Construtor: */
+    public function __construct( 
+        string $valorDoNome, int $valorDaIdade, string $valorDoEmail ) {
+        
+            $this->nome = $valorDoNome;
+            $this->idade = $valorDaIdade;
+            $this->email = $valorDoEmail;
+
     }
+}
