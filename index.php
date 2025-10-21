@@ -29,6 +29,18 @@ $clienteB->email = "jhon@gmail.com";
     
     <h3>Acessando/lendo os dados dos objetos</h3>
 
+    <!-- Segunda versão (acesso através de um método-->
+    <?=$clienteA->mostrarDados()?>
+
+    <?=$clienteB->mostrarDados()?>
+
+
+
+
+
+
+    <hr>
+    <!-- Primeira versão (acesso direto)-->
     <h4> Cliente A</h4>
     <ul>
         <li>Nome: <?= $clienteA->nome ?></li>
@@ -41,8 +53,7 @@ $clienteB->email = "jhon@gmail.com";
         <li>Nome: <?= $clienteB->nome?></li>
         <li>Idade: <?= $clienteB->idade?></li>
         <li>E-mail: <?= $clienteB->email?></li>
-    </ul>
-
+    </ul> 
     <hr>
     <h3>Visualizando a estrutura dos objetos</h3>
     <pre><?=var_dump($clienteA, $clienteB)?></pre>
