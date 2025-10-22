@@ -1,13 +1,10 @@
 <?php
 class Cliente {
-    public string $nome;
-    public int $idade;
-    public string $email;
+    private string $nome;
+    private int $idade;
+    private string $email;
+    private ?string $telefone; 
 
-    // Telefone é opcional, ou seja, caso não seja informado ficará valendo null
-    public ?string $telefone; // ? indica que este atributo PODE ser NULL
-
-    /* Método Construtor: */
     public function __construct( 
         string $valorDoNome, 
         int $valorDaIdade, 
@@ -15,10 +12,23 @@ class Cliente {
         ?string $valorDoTelefone = null
     ) {
         
-            $this->nome = $valorDoNome;
-            $this->idade = $valorDaIdade;
-            $this->email = $valorDoEmail;
-            $this->telefone = $valorDoTelefone;
+        $this->nome = $valorDoNome;
+        $this->idade = $valorDaIdade;
+        $this->email = $valorDoEmail;
+        $this->telefone = $valorDoTelefone;
 
+    }   
+
+    public function getNome():string{
+        return $this->nome;
     }
+
+    public function getEmail():string{
+        return $this->email;
+    }
+
+    public function getIdade():int{
+        return $this->idade;
+    }
+
 }

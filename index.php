@@ -24,6 +24,11 @@ $clienteC = new Cliente("Kennedy", 16, "kennedy@gmail.com", "11-91356-8817")
     
     <hr>
     <h3>Visualizando a estrutura dos objetos</h3>
-    <pre><?=var_dump($clienteA, $clienteB, $clienteC)?></pre>
+
+    <div>
+        <h2><?=$clienteA->getNome()?></h2>
+        <p><?=$clienteA->getIdade()?>anos</p>
+        <p><?=$clienteA->getEmail()?></p>
+    </div>
 </body>
 </html>
