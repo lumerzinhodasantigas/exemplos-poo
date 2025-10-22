@@ -1,12 +1,12 @@
 body{
     box-sizing: border-box;
-    background-color: rgb(241, 241, 241);
+    background-color: #f1f1f1;
     margin: 0px;
     padding: 0px;
 }
 
 #cabecalho{
-    background-color: rgb(181, 220, 255);
+    background-color: rgb(177, 0, 0);
     padding: 5px 0;
     margin: 0px;
 }
@@ -14,6 +14,7 @@ body{
 #titulo_principal{
     text-align: center;
     font-family: Arial, sans-serif;
+    color: white;
 }
 
 #secao-livros{
@@ -22,13 +23,24 @@ body{
     padding: 15px;
     margin: 10px 0;
     gap: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
-.livros{
-    background-color:rgb(255, 255, 255);
+.topo-titulo {
+    background-color: rgb(177, 0, 0);
+    color: white;
+    padding: 10px;
+    border-radius: 8px 8px 0 0;
     text-align: center;
-    font-size: 15px; 
-    margin-bottom: 20px; 
-    font-family: Arial, sans-serif;
-    border-radius: 12px;
+    font-size: 18px;
+    letter-spacing: 0.5px;
 }
+
+.livro {
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 6px rgb(3, 3, 3);
+}
+

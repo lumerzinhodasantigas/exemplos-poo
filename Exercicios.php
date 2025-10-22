@@ -1,43 +1,18 @@
 <?php
     require_once "src/Livro.php";
 
-    $livro1 = new Livro();
-    $livro2 = new Livro();
-    $livro3 = new Livro();
-    $livro4 = new Livro();
-    $livro5 = new Livro();
-    $livro6 = new Livro();
+    $livro1 = new Livro("IT", "Stephen King", 23 );
+    $livro2 = new Livro("O Iluminado", "Stephen King", 58);
+    $livro3 = new Livro("Dexter, A Mão Esquerda de Deus", "Jeff Lindsay", 24);
+    $livro4 = new Livro("O Exorcista", "William Peter Blatty", 22, "400");
+    $livro5 = new Livro("O Chamado de Cthulhu", "H. P. Lovecraft", 3, "368");
+    $livro6 = new Livro("Drácula", "Bram Stoker", 27, "528");
 
-    $livro1->titulo = "IT: A Coisa";
-    $livro1->autor = "Stephen King";
+    /*
     $livro1->paginas = 1104;
-    $livro1->capitulos = 23;
-
-    $livro2->titulo = "O Iluminado";
-    $livro2->autor = "Stephen King";
     $livro2->paginas = 520;
-    $livro2->capitulos = 58;
-
-    $livro3->titulo = "Dexter, A Mão Esquerda de Deus";
-    $livro3->autor = "Jeff Lindsay";
-    $livro3->paginas = 272;
-    $livro3->capitulos = 24;
-
-    $livro4->titulo = "O Exorcita";
-    $livro4->autor = "William Peter Blatty";
-    $livro4->paginas = 400;
-    $livro4->capitulos = 22;
-
-    $livro5->titulo = "O Chamado de Cthulhu";
-    $livro5->autor = "H. P. Lovecraft";
-    $livro5->paginas = 368;
-    $livro5->capitulos = 3;
-
-    $livro6->titulo = "Drácula";
-    $livro6->autor = "Bram Stoker";
-    $livro6->paginas = 528;
-    $livro6->capitulos = 27;
-
+    $livro3->paginas = 272; 
+    */
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -46,6 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biblioteca</title>
     <link rel="stylesheet" href="estilo.css">
+    
 </head>
 
 <body>
@@ -57,30 +33,62 @@
 
     <section id="secao-livros">
 
-    <div class="livros">
-        <?=$livro1->mostrarDados()?>
+    <div class="livro">
+
+        <div class="topo-titulo"><h2><?= $livro1->titulo ?></h2></div>
+        <p><strong>Autor:</strong> <?= $livro1->autor ?></p>
+        <p><strong>Capítulos:</strong> <?= $livro1->capitulos ?></p>
+        <p><strong>Páginas:</strong> <?= $livro1->pagina ?? "Não informado" ?></p>
+
     </div>
 
-    <div class="livros">
-        <?=$livro2->mostrarDados()?>
+    <div class="livro">
+
+        <div class="topo-titulo"><h2><?= $livro2->titulo ?></h2></div>
+        <p><strong>Autor:</strong> <?= $livro2->autor ?></p>
+        <p><strong>Capítulos:</strong> <?= $livro2->capitulos ?></p>
+        <p><strong>Páginas:</strong> <?= $livro2->pagina ?? "Não informado" ?></p>
+
     </div>
 
-    <div class="livros">
-        <?=$livro3->mostrarDados()?>
+    <div class="livro">
+
+        <div class="topo-titulo"><h2><?= $livro3->titulo ?></h2></div>
+        <p><strong>Autor:</strong> <?= $livro3->autor ?></p>
+        <p><strong>Capítulos:</strong> <?= $livro3->capitulos ?></p>
+        <p><strong>Páginas:</strong> <?= $livro3->pagina ?? "Não informado" ?></p>
+
     </div>
 
-    <div class="livros">
-        <?=$livro4->mostrarDados()?>
+    <div class="livro">
+
+        <div class="topo-titulo"><h2><?= $livro4->titulo?></h2></div>
+        <p><strong>Autor:</strong> <?= $livro4->autor ?></p>
+        <p><strong>Capítulos:</strong> <?= $livro4->capitulos ?></p>
+        <p><strong>Páginas:</strong> <?= $livro4->pagina ?? "Não informado" ?></p>
+
+    </div>   
+
+    <div class="livro">
+
+        <div class="topo-titulo"><h2><?= $livro5->titulo ?></h2></div>
+        <p><strong>Autor:</strong> <?= $livro5->autor ?></p>
+        <p><strong>Capítulos:</strong> <?= $livro5->capitulos ?></p>
+        <p><strong>Páginas:</strong> <?= $livro5->pagina ?? "Não informado" ?></p>
+
     </div>
 
-    <div class="livros">
-        <?=$livro5->mostrarDados()?>
+    <div class="livro">
+
+        <div class="topo-titulo"><h2><?= $livro6->titulo?></h2></div>
+        <p><strong>Autor:</strong> <?= $livro6->autor ?></p>
+        <p><strong>Capítulos:</strong> <?= $livro6->capitulos ?></p>
+        <p><strong>Páginas:</strong> <?= $livro6->pagina ?? "Não informado" ?></p>
+
     </div>
 
-    <div class="livros">
-        <?=$livro6->mostrarDados()?>
-    </div>
+</section>
 
-    </section>
+
 </body>
 </html>
