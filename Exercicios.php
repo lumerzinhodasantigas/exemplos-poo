@@ -1,7 +1,7 @@
 <?php
     require_once "src/Livro.php";
 
-    $livro1 = new Livro("IT", "Stephen King", 23 );
+    $livro1 = new Livro("IT: A Coisa", "Stephen King", 23 );
     $livro2 = new Livro("O Iluminado", "Stephen King", 58);
     $livro3 = new Livro("Dexter, A Mão Esquerda de Deus", "Jeff Lindsay", 24);
     $livro4 = new Livro("O Exorcista", "William Peter Blatty", 22, "400");
