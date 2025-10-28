@@ -13,7 +13,7 @@ class Cliente {
     ) {
         $this->setNome($valorDoNome);
         $this->idade = $valorDaIdade;
-        $this->setEmail($valorDoEmail); // corrigido: valida e-mail corretamente
+        $this->setEmail($valorDoEmail);
         $this->telefone = $valorDoTelefone;
     }   
 
